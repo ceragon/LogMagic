@@ -40,5 +40,6 @@ public class ELogController extends Controller{
 		}
 		setAttr("codeLines", codeLines);
 		render("query.vm");
+		log.info("");
 	}
 }
