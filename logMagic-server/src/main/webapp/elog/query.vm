@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  #include("/pages/head.vm")
+  <body>
+	#include("/pages/top-nav.vm")
+	<div class="row">
+		#include("/pages/left-nav.vm")
+		<div class="col-md-10">
+			#include("/pages/function-bar.vm")
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>
+									备用字段
+								</th>
+								<th>
+									输出错误日志的代码行数
+								</th>
+								<th>
+									出现次数
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							#set($i=0)
+							#foreach(${codeLine} in ${codeLines})
+								#if($i % 2==0)
+									<tr class="active">
+								#else
+									<tr>
+								#end
+								<td>
+									1
+								</td>
+								<td>
+									${codeLine.line}
+								</td>
+								<td>
+									${codeLine.count}
+								</td>
+							</tr>
+							#set($i=$i+1)
+							#end
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	#include("/pages/bottom.vm")
+  </body>
+</html>
