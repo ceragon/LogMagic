@@ -1,4 +1,4 @@
-package com.elcolect.server.jfinal.model.hello;
+package com.logMagic.server.jfinal.model.hello;
 
 public class CodeLine {
 	private String line;

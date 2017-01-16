@@ -1,4 +1,4 @@
-package com.elcolect.server;
+package com.logMagic.server;
 
 import com.jfinal.core.JFinal;
 

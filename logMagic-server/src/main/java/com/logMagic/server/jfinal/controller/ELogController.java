@@ -1,4 +1,4 @@
-package com.elcolect.server.jfinal.controller;
+package com.logMagic.server.jfinal.controller;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
@@ -15,9 +15,9 @@ import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.TermsBuilder;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms.Bucket;
 
-import com.elcolect.server.elastic.ElasticSearchHandler;
-import com.elcolect.server.jfinal.model.hello.CodeLine;
 import com.jfinal.core.Controller;
+import com.logMagic.server.elastic.ElasticSearchHandler;
+import com.logMagic.server.jfinal.model.hello.CodeLine;
 
 public class ELogController extends Controller{
 	private final static Logger log=LogManager.getLogger(ELogController.class);

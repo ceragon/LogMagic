@@ -1,4 +1,4 @@
-package com.elcolect.server.elastic;
+package com.logMagic.server.elastic;
 
 
 import java.net.InetAddress;

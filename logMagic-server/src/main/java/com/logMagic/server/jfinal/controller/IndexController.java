@@ -1,4 +1,4 @@
-package com.elcolect.server.jfinal.controller;
+package com.logMagic.server.jfinal.controller;
 
 import com.jfinal.core.Controller;
 
