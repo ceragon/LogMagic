@@ -1,30 +1,55 @@
- <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
+
+<div class="row">
+	<div class="col-md-12">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button> <a class="navbar-brand" href="/index">ELCollect</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">常规</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						 <a id="modal-timepicker" href="#modal-container-timepicker" role="button" data-toggle="modal">选择时间</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="modal fade" id="modal-container-timepicker" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						×
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						选择查询的时间范围，默认是当天
+					</h4>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
 					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">ELCollect</a>
+					<button type="button" class="btn btn-default" data-dismiss="modal">
+						关闭
+					</button> 
+					<button type="button" class="btn btn-primary">
+						确定
+					</button>
 				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">常规</a>
-						</li>
-						<li>
-							<a href="#">Link</a>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="#">Link</a>
-						</li>
-					</ul>
-				</div>
-				
-			</nav>
+			</div>
 		</div>
 	</div>
+</div>

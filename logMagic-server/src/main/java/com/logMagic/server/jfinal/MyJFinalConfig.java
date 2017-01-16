@@ -6,7 +6,9 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.jfinal.kit.PropKit;
 import com.jfinal.render.ViewType;
+import com.logMagic.server.LogMagicServer;
 import com.logMagic.server.jfinal.controller.ELogController;
 import com.logMagic.server.jfinal.controller.IndexController;
 
@@ -14,6 +16,7 @@ public class MyJFinalConfig extends JFinalConfig{
 
 	@Override
 	public void configConstant(Constants me) {
+		
 		me.setDevMode(true);
 		me.setViewType(ViewType.VELOCITY);
 	}
@@ -29,7 +32,7 @@ public class MyJFinalConfig extends JFinalConfig{
 
 	@Override
 	public void configPlugin(Plugins arg0) {
-		
+		PropKit.use("server.properties");
 	}
 	@Override
 	public void configRoute(Routes me) {
@@ -38,6 +41,7 @@ public class MyJFinalConfig extends JFinalConfig{
 	}
 	@Override
 	public void afterJFinalStart() {
+		LogMagicServer.start();
 	}
 	@Override
 	public void beforeJFinalStop() {

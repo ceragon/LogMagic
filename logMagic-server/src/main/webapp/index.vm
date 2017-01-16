@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  #include("/pages/head.vm")
+  #parse("/pages/head.vm")
   <body>
-	#include("/pages/top-nav.vm")
-	<div class="row">
-		#include("/pages/left-nav.vm")
-		<div class="col-md-10">
-			#include("/pages/function-bar.vm")
-			<div class="row">
-				<div class="col-md-12">
-					<!-- 这里添加内容 -->
-				</div>
-			</div>
-		</div>
+	<div class="container-fluid">
+	#parse("/pages/top-nav.vm")
+    	<div class="row">
+    		#parse("/pages/left-nav.vm")
+    		<div class="col-md-10">
+    			#parse("/pages/function-bar.vm")
+    			<div class="row">
+    				<div class="col-md-12">
+    					<!-- 这里添加内容 -->
+    				</div>
+    			</div>
+    		</div>
+    	</div>
 	</div>
-</div>
-	#include("/pages/bottom.vm")
+	#parse("/pages/bottom.vm")
   </body>
 </html>
