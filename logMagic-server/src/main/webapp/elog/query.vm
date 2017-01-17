@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
   #parse("/pages/head.vm")
-  <body>
 	<div class="container-fluid">
 		#parse("/pages/top-nav.vm")
     	<div class="row">
@@ -52,5 +49,3 @@
     	</div>
 	</div>
 	#parse("/pages/bottom.vm")
-  </body>
-</html>

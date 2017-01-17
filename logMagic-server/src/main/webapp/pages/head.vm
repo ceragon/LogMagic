@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,3 +15,4 @@
 	<link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
   </head>
+  <body>
