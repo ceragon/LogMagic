@@ -22,10 +22,6 @@
 							#end
                         </select>
                     </div>
-					<div class="form-group">
-                        <label>查询条件</label>
-						<input type="text" class="form-control" />
-					</div> 
 					<button id="elog-query" type="button" class="btn btn-default">
 						查询
 					</button>

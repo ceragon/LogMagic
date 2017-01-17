@@ -38,16 +38,56 @@
 					</h4>
 				</div>
 				<div class="modal-body">
-					...
+					<div class="row">
+						<div class="col-md-2">
+							<h5 >快速选择  </h5>
+                        </div>
+						<div class="btn-group col-md-9">
+            				<button class="btn btn-default" type="button">
+            					 今天
+            				</button> 
+            				<button class="btn btn-default" type="button">
+            					 昨天
+            				</button> 
+            				<button class="btn btn-default" type="button">
+            					前天
+            				</button> 
+            				<button class="btn btn-default" type="button">
+            					一周内
+            				</button>
+            			</div>
+                    </div>
+					<br />
+					<div class="row">
+						<div class="col-md-2">
+							<h5 >开始时间  </h5>
+                        </div>
+						<div class="col-md-5">
+							<div class="input-group date form_datetime">
+                                <input id="nav-start-time" class="form-control" type="text" value="$!{nav-start-time}" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+					<br />
+					<div class="row">
+						<div class="col-md-2">
+							<h5 >结束时间  </h5>
+                        </div>
+						<div class="col-md-5">
+							<div class="input-group date form_datetime">
+                                <input id="nav-end-time" class="form-control" type="text" value="$!{nav-end-time}" readonly>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                        	</div>
+                        </div>
+						<div class="col-md-5"></div>
+                    </div>
 				</div>
 				<div class="modal-footer">
-					 
-					<button type="button" class="btn btn-default" data-dismiss="modal">
-						关闭
-					</button> 
-					<button type="button" class="btn btn-primary">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">
 						确定
-					</button>
+					</button> 
 				</div>
 			</div>
 		</div>

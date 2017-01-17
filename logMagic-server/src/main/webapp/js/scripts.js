@@ -16,5 +16,18 @@ function post(URL, PARAMS) {
 }
 $("#elog-query").click(function(){
 	var showSize=$("#show-size").val();
-	post("/elog/query",{size:showSize});
+	var startTime=$("#nav-start-time").val();
+	var endTime=$("#nav-end-time").val();
+	post("/elog/query",{
+		size:showSize,
+		startTime:startTime,
+		endTime:endTime
+	});
+});
+$(".form_datetime").datetimepicker({
+    format: "yyyy-mm-dd HH:ii:ss",
+    autoclose: true,
+    todayBtn: true,
+    language:"zh-CN",
+    minuteStep: 5,
 });
