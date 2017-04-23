@@ -30,4 +30,5 @@ $(".form_datetime").datetimepicker({
     todayBtn: true,
     language:"zh-CN",
     minuteStep: 5,
+    minView:1,
 });
